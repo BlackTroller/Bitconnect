@@ -1,0 +1,36 @@
+<br>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <h3>Variação do preço da Bitcoin</h3>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div style="display: block">
+      <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+      </canvas>
+    </div>
+  </div>
+
+  <br>
+  <div class="container">
+  <button class="btn btn-primary">Day</button>
+  <button class="btn btn-primary">Week</button>
+  <button class="btn btn-primary">Month</button>
+  <button class="btn btn-primary">Year</button>
+  <button class="btn btn-primary">All time</button>
+  </div>
+  <br>  
+  <br> 
+  <br>  
+  <br>  
+  <br>
+  <br>
+  <br>

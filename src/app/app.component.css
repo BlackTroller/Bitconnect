@@ -1,0 +1,10 @@
+.body{
+    display: flex;
+}
+
+.page-footer{
+    padding: 10px;
+    background:#343a40!important;
+    color: white;
+    bottom: 0;
+  }
