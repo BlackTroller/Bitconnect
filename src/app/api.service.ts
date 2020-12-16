@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const KEY = '';
-const BASE_URL = 'https://apiv2.bitcoinaverage.com/indices/global/ticker/BTC';
-const PATH_URL = '';
+const KEY = 'ZDYzMWFkYWU5ZmU4NGM2ZWFjNGIyYzg1NjZiOWYwNzY';
+const BASE_URL = 'https://apiv2.bitcoinaverage.com/indices/global/ticker/all?crypto=BTC&fiat=EUR';
 
 @Injectable({
   providedIn: 'root'
@@ -18,4 +17,7 @@ export class APIService {
     });
    }
     
+   getBitcoinPrice(){
+     return this.http.get(BASE_URL);
+   }
 }

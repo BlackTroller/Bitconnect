@@ -41,7 +41,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
     AngularFireDatabaseModule,
     
   ],
-  providers: [AngularFirestore],
+  providers: [AngularFirestore, APIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
